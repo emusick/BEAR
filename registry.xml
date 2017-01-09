@@ -4,7 +4,7 @@
 		<item>0001</item>
 		<nist></nist>
 		<description>Telemetry</description>
-		<notes></notes>
+		<notes>Disable telemetry</notes>
 		<path>HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection</path>
 		<key>AllowTelemetry</key>
 		<type>DWord</type>
@@ -15,7 +15,7 @@
 		<item>0002</item>
 		<nist></nist>
 		<description>Telemetry</description>
-		<notes></notes>
+		<notes>Disable telemetry</notes>
 		<path>HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection</path>
 		<key>AllowTelemetry</key>
 		<type>DWord</type>
@@ -26,11 +26,253 @@
 		<item>0003</item>
 		<nist></nist>
 		<description>Telemetry</description>
-		<notes></notes>
+		<notes>Disable telemetry</notes>
 		<path>HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection</path>
 		<key>AllowTelemetry</key>
 		<type>DWord</type>
 		<default>1</default>
 		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0004</item>
+		<nist></nist>
+		<description>Wi-Fi Sense</description>
+		<notes>Disable Wi-Fi Sense</notes>
+		<path>HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowWiFiHotSpotReporting</path>
+		<key>Value</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0005</item>
+		<nist></nist>
+		<description>Wi-Fi Sense</description>
+		<notes>Disable Wi-Fi Sens</notes>
+		<path>HKLM:\Software\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots</path>
+		<key>Value</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0006</item>
+		<nist></nist>
+		<description>Bing Search in Start Menu</description>
+		<notes>Disable Bing Search in Start Menu</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Search</path>
+		<key>BingSearchEnabled</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0007</item>
+		<nist></nist>
+		<description>Start Menu suggestions</description>
+		<notes>Disable Start Menu suggestions</notes>
+		<path>HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\ContentDeliveryManager</path>
+		<key>SystemPaneSuggestionsEnabled</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0008</item>
+		<nist></nist>
+		<description>Location Tracking</description>
+		<notes>Disable Location Tracking</notes>
+		<path>HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}</path>
+		<key>SensorPermissionState</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0009</item>
+		<nist></nist>
+		<description>Location Tracking</description>
+		<notes>Disable Location Tracking</notes>
+		<path>HKLM:\System\CurrentControlSet\Services\lfsvc\Service\Configuration</path>
+		<key>Status</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0010</item>
+		<nist></nist>
+		<description>Feedback</description>
+		<notes>Disable Feedback</notes>
+		<path>HKCU:\Software\Microsoft\Siuf\Rules</path>
+		<key>NumberOfSIUFInPeriod</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0011</item>
+		<nist></nist>
+		<description>Advertising ID</description>
+		<notes>Disable Advertising ID</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\AdvertisingInfo</path>
+		<key>Enabled</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0012</item>
+		<nist></nist>
+		<description>Cortana</description>
+		<notes>Disable Cortana</notes>
+		<path>HKCU:\Software\Microsoft\Personalization\Settings</path>
+		<key>AcceptedPrivacyPolicy</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0013</item>
+		<nist></nist>
+		<description>Cortana</description>
+		<notes>Disable Cortana</notes>
+		<path>HKCU:\Software\Microsoft\InputPersonalization</path>
+		<key>RestrictImplicitTextCollection</key>
+		<type>DWord</type>
+		<default>0</default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0014</item>
+		<nist></nist>
+		<description>Cortana</description>
+		<notes>Disable Cortana</notes>
+		<path>HKCU:\Software\Microsoft\InputPersonalization</path>
+		<key>RestrictImplicitInkCollection</key>
+		<type>DWord</type>
+		<default>0</default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0015</item>
+		<nist></nist>
+		<description>Cortana</description>
+		<notes>Disable Cortana</notes>
+		<path>HKCU:\Software\Microsoft\InputPersonalization\TrainedDataStore</path>
+		<key>HarvestContacts</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0016</item>
+		<nist></nist>
+		<description>Windows Update P2P</description>
+		<notes>Restrict Windows Update P2P only to local network</notes>
+		<path>HKLM:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config</path>
+		<key>DODownloadMode</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0017</item>
+		<nist></nist>
+		<description>Windows Update P2P</description>
+		<notes>Restrict Windows Update P2P only to local network</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\DeliveryOptimization</path>
+		<key>SystemSettingsDownloadMode</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>3</expected>
+	</registry>
+	<registry>
+		<item>0018</item>
+		<nist></nist>
+		<description>Windows Update automatic restart</description>
+		<notes>Disable Windows Update automatic restart</notes>
+		<path>HKLM:\Software\Microsoft\WindowsUpdate\UX\Settings</path>
+		<key>UxOption</key>
+		<type>DWord</type>
+		<default>0</default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0019</item>
+		<nist></nist>
+		<description>Autoplay</description>
+		<notes>Disable Autoplay</notes>
+		<path>HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers</path>
+		<key>DisableAutoplay</key>
+		<type>DWord</type>
+		<default>0</default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0020</item>
+		<nist></nist>
+		<description>Sticky keys</description>
+		<notes>Disable Sticky keys prompt</notes>
+		<path>HKCU:\Control Panel\Accessibility\StickyKeys</path>
+		<key>Flags</key>
+		<type>String</type>
+		<default>510</default>
+		<expected>506</expected>
+	</registry>
+	<registry>
+		<item>0021</item>
+		<nist></nist>
+		<description>Search button</description>
+		<notes>Hide Search button</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Search</path>
+		<key>SearchboxTaskbarMode</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0022</item>
+		<nist></nist>
+		<description>Taskbar icons</description>
+		<notes>Show small icons in taskbar</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</path>
+		<key>TaskbarSmallIcons</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0023</item>
+		<nist></nist>
+		<description>Known file extensiosn</description>
+		<notes>Show known file extensions</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</path>
+		<key>HideFileExt</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0024</item>
+		<nist></nist>
+		<description>Hidden files</description>
+		<notes>Show hidden files</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</path>
+		<key>Hidden</key>
+		<type>DWord</type>
+		<default>2</default>
+		<expected>1</expected>
+	</registry>
+	<registry>
+		<item>0025</item>
+		<nist></nist>
+		<description>Default Explorer view</description>
+		<notes>Change default Explorer view to "Computer"</notes>
+		<path>HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced</path>
+		<key>LaunchTo</key>
+		<type>DWord</type>
+		<default></default>
+		<expected>1</expected>
 	</registry>
 </configuration>

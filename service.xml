@@ -30,7 +30,7 @@
 	</service>
 	<service>
 		<name>Appinfo</name>
-		<description>Application Information facilitates the running of interactive applications with additional administrative privileges.  If this service is stopped, users will be unable to launch applications with the additional administrative privileges they may require to perform desired user tasks.</description>
+		<description>Application Information facilitates the running of interactive applications with additional administrative privileges. If this service is stopped, users will be unable to launch applications with the additional administrative privileges they may require to perform desired user tasks.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -324,7 +324,7 @@
 	</service>
 	<service>
 		<name>Eaphost</name>
-		<description>Extensible Authentication Protocol service provides network authentication in such scenarios as 802.1x wired and wireless, VPN, and Network Access Protection (NAP).  EAP also provides application programming interfaces (APIs) that are used by network access clients, including wireless and VPN clients, during the authentication process.</description>
+		<description>Extensible Authentication Protocol service provides network authentication in such scenarios as 802.1x wired and wireless, VPN, and Network Access Protection (NAP). EAP also provides application programming interfaces (APIs) that are used by network access clients, including wireless and VPN clients, during the authentication process.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -485,7 +485,7 @@
 	</service>
 	<service>
 		<name>PolicyAgent</name>
-		<description>IPsec Policy Agent supports network-level peer authentication, data origin authentication, data integrity, data confidentiality (encryption), and replay protection.  This service enforces IPsec policies created through the IP Security Policies snap-in or the command-line tool "netsh ipsec".</description>
+		<description>IPsec Policy Agent supports network-level peer authentication, data origin authentication, data integrity, data confidentiality (encryption), and replay protection. This service enforces IPsec policies created through the IP Security Policies snap-in or the command-line tool "netsh ipsec".</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -611,7 +611,7 @@
 	</service>
 	<service>
 		<name>NetSetupSvc</name>
-		<description>Network Setup Service manages the installation of network drivers and permits the configuration of low-level network settings.  If this service is stopped, any driver installations that are in-progress may be cancelled.</description>
+		<description>Network Setup Service manages the installation of network drivers and permits the configuration of low-level network settings. If this service is stopped, any driver installations that are in-progress may be cancelled.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -646,14 +646,14 @@
 	</service>
 	<service>
 		<name>p2psvc</name>
-		<description>Peer Networking Grouping enables multi-party communication using Peer-to-Peer Grouping.  If disabled, some applications, such as HomeGroup, may not function.</description>
+		<description>Peer Networking Grouping enables multi-party communication using Peer-to-Peer Grouping. If disabled, some applications, such as HomeGroup, may not function.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
 	</service>
 	<service>
 		<name>p2pimsvc</name>
-		<description>Peer Networking Identity Manager provides identity services for the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services.  If disabled, the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services may not function, and some applications, such as HomeGroup and Remote Assistance, may not function correctly.</description>
+		<description>Peer Networking Identity Manager provides identity services for the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services. If disabled, the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services may not function, and some applications, such as HomeGroup and Remote Assistance, may not function correctly.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -688,7 +688,7 @@
 	</service>
 	<service>
 		<name>PNRPAutoReg</name>
-		<description>PNRP Machine Name Publication Service publishes a machine name using the Peer Name Resolution Protocol.  Configuration is managed via the netsh context 'p2p pnrp peer'.</description>
+		<description>PNRP Machine Name Publication Service publishes a machine name using the Peer Name Resolution Protocol. Configuration is managed via the netsh context 'p2p pnrp peer'.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -709,7 +709,7 @@
 	</service>
 	<service>
 		<name>Spoolers</name>
-		<description>Print Spooler service spools print jobs and handles interaction with the printer.  If you turn off this service, you won’t be able to print or see your printers.</description>
+		<description>Print Spooler service spools print jobs and handles interaction with the printer. If you turn off this service, you won’t be able to print or see your printers.</description>
 		<notes></notes>
 		<default>Auto</default>
 		<expected>Auto</expected>
@@ -730,7 +730,7 @@
 	</service>
 	<service>
 		<name>PcaSvc</name>
-		<description>Program Compatibility Assistant Service provides support for the Program Compatibility Assistant (PCA).  PCA monitors programs installed and run by the user and detects known compatibility problems. If this service is stopped, PCA will not function properly.</description>
+		<description>Program Compatibility Assistant Service provides support for the Program Compatibility Assistant (PCA). PCA monitors programs installed and run by the user and detects known compatibility problems. If this service is stopped, PCA will not function properly.</description>
 		<notes></notes>
 		<default>Auto</default>
 		<expected>Auto</expected>
@@ -765,7 +765,7 @@
 	</service>
 	<service>
 		<name>TermService</name>
-		<description>Remote Desktop Services allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service.  To prevent remote use of this computer, clear the checkboxes on the Remote tab of the System properties control panel item.</description>
+		<description>Remote Desktop Services allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service. To prevent remote use of this computer, clear the checkboxes on the Remote tab of the System properties control panel item.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -835,14 +835,14 @@
 	</service>
 	<service>
 		<name>SamSs</name>
-		<description>Security Accounts Manager. The startup of this service signals other services that the Security Accounts Manager (SAM) is ready to accept requests.  Disabling this service will prevent other services in the system from being notified when the SAM is ready, which may in turn cause those services to fail to start correctly. This service should not be disabled.</description>
+		<description>Security Accounts Manager. The startup of this service signals other services that the Security Accounts Manager (SAM) is ready to accept requests. Disabling this service will prevent other services in the system from being notified when the SAM is ready, which may in turn cause those services to fail to start correctly. This service should not be disabled.</description>
 		<notes></notes>
 		<default>Auto</default>
 		<expected>Auto</expected>
 	</service>
 	<service>
 		<name>wscsvc</name>
-		<description>The WSCSVC (Windows Security Center) service monitors and reports security health settings on the computer.  The health settings include firewall (on/off), antivirus (on/off/out of date), antispyware (on/off/out of date), Windows Update (automatically/manually download and install updates), User Account Control (on/off), and Internet settings (recommended/not recommended). The service provides COM APIs for independent software vendors to register and record the state of their products to the Security Center service.  The Security and Maintenance UI uses the service to provide systray alerts and a graphical view of the security health states in the Security and Maintenance control panel.  Network Access Protection (NAP) uses the service to report the security health states of clients to the NAP Network Policy Server to make network quarantine decisions.  The service also has a public API that allows external consumers to programmatically retrieve the aggregated security health state of the system.</description>
+		<description>The WSCSVC (Windows Security Center) service monitors and reports security health settings on the computer. The health settings include firewall (on/off), antivirus (on/off/out of date), antispyware (on/off/out of date), Windows Update (automatically/manually download and install updates), User Account Control (on/off), and Internet settings (recommended/not recommended). The service provides COM APIs for independent software vendors to register and record the state of their products to the Security Center service. The Security and Maintenance UI uses the service to provide systray alerts and a graphical view of the security health states in the Security and Maintenance control panel. Network Access Protection (NAP) uses the service to report the security health states of clients to the NAP Network Policy Server to make network quarantine decisions. The service also has a public API that allows external consumers to programmatically retrieve the aggregated security health state of the system.</description>
 		<notes></notes>
 		<default>Auto</default>
 		<expected>Auto</expected>
@@ -856,14 +856,14 @@
 	</service>
 	<service>
 		<name>SensrSvc</name>
-		<description>Sensor Monitoring Service monitors various sensors in order to expose data and adapt to system and user state.  If this service is stopped or disabled, the display brightness will not adapt to lighting conditions. Stopping this service may affect other system functionality and features as well.</description>
+		<description>Sensor Monitoring Service monitors various sensors in order to expose data and adapt to system and user state. If this service is stopped or disabled, the display brightness will not adapt to lighting conditions. Stopping this service may affect other system functionality and features as well.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Disabled</expected>
 	</service>
 	<service>
 		<name>SensorService</name>
-		<description>Sensor Service is a service for sensors that manages different sensors' functionality. Manages Simple Device Orientation (SDO) and History for sensors. Loads the SDO sensor that reports device orientation changes.  If this service is stopped or disabled, the SDO sensor will not be loaded and so auto-rotation will not occur. History collection from Sensors will also be stopped.</description>
+		<description>Sensor Service is a service for sensors that manages different sensors' functionality. Manages Simple Device Orientation (SDO) and History for sensors. Loads the SDO sensor that reports device orientation changes. If this service is stopped or disabled, the SDO sensor will not be loaded and so auto-rotation will not occur. History collection from Sensors will also be stopped.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Disabled</expected>
@@ -1199,7 +1199,7 @@
 	</service>
 	<service>
 		<name>LicenseManager</name>
-		<description>Windows License Manager Service provides infrastructure support for the Windows Store.  This service is started on demand and if disabled then content acquired through the Windows Store will not function properly.</description>
+		<description>Windows License Manager Service provides infrastructure support for the Windows Store. This service is started on demand and if disabled then content acquired through the Windows Store will not function properly.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -1248,7 +1248,7 @@
 	</service>
 	<service>
 		<name>WinRM</name>
-		<description>Windows Remote Management (WinRM) service implements the WS-Management protocol for remote management. WS-Management is a standard web services protocol used for remote software and hardware management. The WinRM service listens on the network for WS-Management requests and processes them. The WinRM Service needs to be configured with a listener using winrm.cmd command line tool or through Group Policy in order for it to listen over the network. The WinRM service provides access to WMI data and enables event collection. Event collection and subscription to events require that the service is running. WinRM messages use HTTP and HTTPS as transports. The WinRM service does not depend on IIS but is preconfigured to share a port with IIS on the same machine.  The WinRM service reserves the /wsman URL prefix. To prevent conflicts with IIS, administrators should ensure that any websites hosted on IIS do not use the /wsman URL prefix.</description>
+		<description>Windows Remote Management (WinRM) service implements the WS-Management protocol for remote management. WS-Management is a standard web services protocol used for remote software and hardware management. The WinRM service listens on the network for WS-Management requests and processes them. The WinRM Service needs to be configured with a listener using winrm.cmd command line tool or through Group Policy in order for it to listen over the network. The WinRM service provides access to WMI data and enables event collection. Event collection and subscription to events require that the service is running. WinRM messages use HTTP and HTTPS as transports. The WinRM service does not depend on IIS but is preconfigured to share a port with IIS on the same machine. The WinRM service reserves the /wsman URL prefix. To prevent conflicts with IIS, administrators should ensure that any websites hosted on IIS do not use the /wsman URL prefix.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Manual</expected>
@@ -1339,7 +1339,7 @@
 	</service>
 	<service>
 		<name>XblGameSave</name>
-		<description>Xbox Live Game Save service syncs save data for Xbox Live save enabled games.  If this service is stopped, game save data will not upload to or download from Xbox Live.</description>
+		<description>Xbox Live Game Save service syncs save data for Xbox Live save enabled games. If this service is stopped, game save data will not upload to or download from Xbox Live.</description>
 		<notes></notes>
 		<default>Manual</default>
 		<expected>Disabled</expected>

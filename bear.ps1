@@ -1,9 +1,21 @@
 # Bastion Environment for Advanced Response / Audit and Reporting (BEAR)
 #
 # TODO:
-#   - ensure all Get-Service output is accommodated in XML (reverse Audit-Service foreach logic)
-#	- address non-admin issue
-#	- add wrapper for registry hardening to ensure path exists
+#	- Audit-Registry: add wrapper to ensure path exists
+#	- Audit-Registry: ensure all entries have a default value
+#	- Audit-Registry: determine best entries for
+#		all "desktop" and "namespace" hide modifications
+#		Autorun for all drives
+#		Lock screen
+#		Remote Assistance
+#		Remote Desktop
+#		Show all tray icons
+#		Task View button
+#		titles in taskbar
+#	- Audit-Registry: determine best entries for "Remove unwanted applications"
+#   - Audit-Service: ensure all Get-Service output is accommodated in XML (reverse foreach logic)
+#	- BEAR: address non-admin issue
+#	- Harden-Registry: add wrapper to ensure path exists
 #		https://blogs.technet.microsoft.com/heyscriptingguy/2015/04/02/update-or-add-registry-key-value-with-powershell/
 
 $helpMenuChoice = $args[0]
@@ -57,12 +69,12 @@ function Audit-Registry {
 		If ($observedState -match $ci."expected") {
 			Write-host ("Passed: {0}\{1}" -f $ci."path", $ci."key")
 		}
-		Else { Write-host -ForegroundColor "red" "Failed:" $ci."path" "\" $ci."key"
+		Else { Write-host ("Failed: {0}\{1}" -f $ci."path", $ci."key") -ForegroundColor "red"
 		}
 	}
 	
 	Write-Host ""
-	Write-Host "Completed registry hardening."
+	Write-Host "Completed registry audit."
 	Write-Host ""
 }
 
@@ -88,7 +100,7 @@ function Harden-Registry {
 	[xml]$configuration = Get-Content -Path .\registry.xml
 
 	foreach ($ci in $configuration.configuration.registry) {
-		Set-ItemProperty -Path $ci."path" -Name $ci."key" -Type $ci."type" -Value $ci."expected" # 2>&1 | out-null
+		Set-ItemProperty -Path $ci."path" -Name $ci."key" -Type $ci."type" -Value $ci."expected"
 	}
 	
 	Write-Host ""
