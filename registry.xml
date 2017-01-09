@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+	<registry>
+		<item>0001</item>
+		<nist></nist>
+		<description>Telemetry</description>
+		<notes></notes>
+		<path>HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection</path>
+		<key>AllowTelemetry</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0002</item>
+		<nist></nist>
+		<description>Telemetry</description>
+		<notes></notes>
+		<path>HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection</path>
+		<key>AllowTelemetry</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+	<registry>
+		<item>0003</item>
+		<nist></nist>
+		<description>Telemetry</description>
+		<notes></notes>
+		<path>HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Policies\DataCollection</path>
+		<key>AllowTelemetry</key>
+		<type>DWord</type>
+		<default>1</default>
+		<expected>0</expected>
+	</registry>
+</configuration>

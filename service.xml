@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<configuration>
+	<service>
+		<name>AxInstSV</name>
+		<description>ActiveX Installer provides User Account Control validation for the installation of ActiveX controls from the Internet and enables management of ActiveX control installation based on Group Policy settings. This service is started on demand and if disabled the installation of ActiveX controls will behave according to default browser settings.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>AJRouter</name>
+		<description>AllJoyn Router Service routes AllJoyn messages for the local AllJoyn clients.</description>
+		<notes>http://blogs.microsoft.com/iot/2014/11/12/alljoyn-in-windows-10-to-support-interoperability-at-the-heart-of-iot/</notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>AppReadiness</name>
+		<description>Application Readiness gets apps ready for use the first time a user signs in to this PC and when adding new apps.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>AppIDSvc</name>
+		<description>Application Identity determines and verifies the identity of an application. Disabling this service will prevent AppLocker from being enforced.</description>
+		<notes>Required for AppLocker</notes>
+		<default>Manual</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>Appinfo</name>
+		<description>Application Information facilitates the running of interactive applications with additional administrative privileges.  If this service is stopped, users will be unable to launch applications with the additional administrative privileges they may require to perform desired user tasks.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>ALG</name>
+		<description>Application Layer Gateway Service provides support for 3rd party protocol plug-ins for Internet Connection Sharing</description>
+		<notes>Required for Windows firewall</notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>AppMgmt</name>
+		<description>Application Management processes installation, removal, and enumeration requests for software deployed through Group Policy. If the service is disabled, users will be unable to install, remove, or enumerate software deployed through Group Policy.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>AppXSvc</name>
+		<description>AppX Deployment Service provides infrastructure support for deploying Store applications. This service is started on demand and if disabled Store applications will not be deployed to the system, and may not function properly.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>BDESVC</name>
+		<description>BitLocker Drive Encryption Service hosts the BitLocker Drive Encryption service.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>BFE</name>
+		<description>The Base Filtering Engine (BFE) is a service that manages firewall and Internet Protocol security (IPsec) policies and implements user mode filtering.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>BITS</name>
+		<description>Background Intelligent Transfer Service transfers files in the background using idle network bandwidth.</description>
+		<notes>Required for Windows Update</notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wbengine</name>
+		<description>Block Level Backup Engine Service is used by Windows Backup to perform backup and recovery operations.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>BrokerInfrastructure</name>
+		<description>Background Tasks Infrastructure Service is the Windows infrastructure service that controls which background tasks can run on the system.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>bthserv</name>
+		<description>Bluetooth Support Service supports discovery and association of remote Bluetooth devices.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PeerDistSvc</name>
+		<description>BranchCache service caches network content from peers on the local subnet.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>CertPropSvc</name>
+		<description>Certificate Propagation copies user certificates and root certificates from smart cards into the current user's certificate store, detects when a smart card is inserted into a smart card reader, and, if needed, installs the smart card Plug and Play minidriver.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>ClipSVC</name>
+		<description>Client License Service (ClipSVC) provides infrastructure support for the Microsoft Store.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disable</expected>
+	</service>
+	<service>
+		<name>KeyIso</name>
+		<description>CNG Key Isolation service is hosted in the LSA process. The service provides key process isolation to private keys and associated cryptographic operations as required by the Common Criteria.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>EventSystem</name>
+		<description>COM+ Event System supports System Event Notification Service (SENS), which provides automatic distribution of events to subscribing Component Object Model (COM) components. If the service is stopped, SENS will close and will not be able to provide logon and logoff notifications.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>COMSysApp</name>
+		<description>The COM+ System Application supports Component Object Model (COM)+-based components.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Browser</name>
+		<description>Computer Browser maintains an updated list of computers on the network and supplies this list to computers designated as browsers.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>CDPSvc</name>
+		<description>The Connected Device Platform Service is used for Connected Devices and Universal Glass scenarios</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>DiagTrack</name>
+		<description>The Connected User Experiences and Telemetry service enables features that support in-application and connected user experiences. Additionally, this service manages the event driven collection and transmission of diagnostic and usage information (used to improve the experience and quality of the Windows Platform) when the diagnostics and usage privacy option settings are enabled under Feedback and Diagnostics.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>CoreMessagingRegistrar</name>
+		<description>CoreMessaging manages communication between system components.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>VaultSvc</name>
+		<description>Credential Manager provides secure storage and retrieval of credentials to users, applications and security service packages.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>CryptSvc</name>
+		<description>Cryptographic Services provides three management services: Catalog Database Service, which confirms the signatures of Windows files and allows new programs to be installed; Protected Root Service, which adds and removes Trusted Root Certification Authority certificates from this computer; and Automatic Root Certificate Update Service, which retrieves root certificates from Windows Update and enable scenarios such as SSL.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>DsSvc</name>
+		<description>Data Sharing Service provides data brokering between applications.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DcpSvc</name>
+		<description>Data Collection Publishing Service supports first party apps to upload data to cloud.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DcomLaunch</name>
+		<description>DCOM Server Process Launcher service launches COM and DCOM servers in response to object activation requests</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>DoSvc</name>
+		<description>Delivery Optimization performs content delivery optimization tasks</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DeviceAssociationService</name>
+		<description>Device Association Service enables pairing between the system and wired or wireless devices.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>DeviceInstall</name>
+		<description>Device Install Service enables a computer to recognize and adapt to hardware changes with little or no user input. </description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DmEnrollmentSvc</name>
+		<description>Device Management Enrollment Service performs Device Enrollment Activities for Device Management</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DsmSvc</name>
+		<description>Device Setup Manager enables the detection, download and installation of device-related software.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>DevQueryBroker</name>
+		<description>DevQuery Background Discovery Broker enables apps to discover devices with a backgroud task</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Dhcp</name>
+		<description>DHCP Client registers and updates IP addresses and DNS records for this computer.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>DPS</name>
+		<description>The Diagnostic Policy Service enables problem detection, troubleshooting and resolution for Windows components.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WdiServiceHost</name>
+		<description>Diagnostic Service Host service to host diagnostics that need to run in a Local Service context.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WdiSystemHost</name>
+		<description>Diagnostic System Host is used by the Diagnostic Policy Service to host diagnostics that need to run in a Local System context.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>TrkWks</name>
+		<description>Distributed Link Tracking Client maintains links between NTFS files within a computer or across computers in a network.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>MSDTC</name>
+		<description>Distributed Transaction Coordinator coordinates transactions that span multiple resource managers, such as databases, message queues, and file systems.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Dnscache</name>
+		<description>DNS Client caches Domain Name System (DNS) names and registers the full computer name for this computer. If the service is stopped, DNS names will continue to be resolved. However, the results of DNS name queries will not be cached and the computer's name will not be registered.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>MapsBroker</name>
+		<description>Downloaded Maps Manager service for application access to downloaded maps. This service is started on-demand by application accessing downloaded maps.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>embeddedmode</name>
+		<description>Embedded Mode</description>
+		<notes>https://developer.microsoft.com/en-us/windows/iot/docs/embeddedmode</notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>EFS</name>
+		<description>Encrypting File System provides the core file encryption technology used to store encrypted files on NTFS file system volumes.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>EntAppSvc</name>
+		<description>Enterprise App Management Service enables enterprise application management.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Eaphost</name>
+		<description>Extensible Authentication Protocol service provides network authentication in such scenarios as 802.1x wired and wireless, VPN, and Network Access Protection (NAP).  EAP also provides application programming interfaces (APIs) that are used by network access clients, including wireless and VPN clients, during the authentication process.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Fax</name>
+		<description>Fax enables you to send and receive faxes, utilizing fax resources available on this computer or on the network.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>fhsvc</name>
+		<description>File History Service protects user files from accidental loss by copying them to a backup location.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>fdPHost</name>
+		<description>Function Discovery Provider Host service hosts the Function Discovery (FD) network discovery providers. These FD providers supply network discovery services for the Simple Services Discovery Protocol (SSDP) and Web Services – Discovery (WS-D) protocol.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>FDResPub</name>
+		<description>Function Discovery Resource Publication publishes this computer and resources attached to this computer so they can be discovered over the network.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>lfsvc</name>
+		<description>Geolocation Service monitors the current location of the system and manages geofences (a geographical location with associated events).</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>gpsvc</name>
+		<description>Group Policy Client service is responsible for applying settings configured by administrators for the computer and users through the Group Policy component.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>HomeGroupListener</name>
+		<description>Makes local computer changes associated with configuration and maintenance of the homegroup-joined computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>HomeGroupProvider</name>
+		<description>Performs networking tasks associated with configuration and maintenance of homegroups</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>hidserv</name>
+		<description>Human Interface Device Service activates and maintains the use of hot buttons on keyboards, remote controls, and other multimedia devices.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>vmickvpexchange</name>
+		<description>Hyper-V Data Exchange Service provides a mechanism to exchange data between the virtual machine and the operating system running on the physical computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicguestinterface</name>
+		<description>Hyper-V Guest Service Interface provides an interface for the Hyper-V host to interact with specific services running inside the virtual machine.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicshutdown</name>
+		<description>Hyper-V Guest Shutdown Service provides a mechanism to shut down the operating system of this virtual machine from the management interfaces on the physical computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicheartbeat</name>
+		<description>Hyper-V Heartbeat Service monitors the state of this virtual machine by reporting a heartbeat at regular intervals. This service helps you identify running virtual machines that have stopped responding.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicrdv</name>
+		<description>Hyper-V Remote Desktop Virtualization Service provides a platform for communication between the virtual machine and the operating system running on the physical computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmictimesync</name>
+		<description>Hyper-V Time Synchronization Service synchronizes the system time of this virtual machine with the system time of the physical computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicvmsession</name>
+		<description>Hyper-V VM Session Service provides a mechanism to manage virtual machine with PowerShell via VM session without a virtual network.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>vmicvss</name>
+		<description>Hyper-V Volume Shadow Copy Requestor coordinates the communications that are required to use Volume Shadow Copy Service to back up applications and data on this virtual machine from the operating system on the physical computer.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>IKEEXT</name>
+		<description>The IKE and AuthIP IPsec Keying Modules hosts the Internet Key Exchange (IKE) and Authenticated Internet Protocol (AuthIP) keying modules. These keying modules are used for authentication and key exchange in Internet Protocol security (IPsec).</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>UI0Detect</name>
+		<description>Interactive Services Detection enables user notification of user input for interactive services, which enables access to dialogs created by interactive services when they appear.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SharedAccess</name>
+		<description>Internet Connection Sharing (ICS) provides network address translation, addressing, name resolution and/or intrusion prevention services for a home or small office network.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>IEEtwCollectorService</name>
+		<description>Internet Explorer ETW Collector Service. When running, this service collects real time ETW events and processes them.</description>
+		<notes>Event Tracing for Windows. Sits below logging and WMI.</notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>iphlpsvc</name>
+		<description>IP Helper provides tunnel connectivity using IPv6 transition technologies (6to4, ISATAP, Port Proxy, and Teredo), and IP-HTTPS.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PolicyAgent</name>
+		<description>IPsec Policy Agent supports network-level peer authentication, data origin authentication, data integrity, data confidentiality (encryption), and replay protection.  This service enforces IPsec policies created through the IP Security Policies snap-in or the command-line tool "netsh ipsec".</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>KtmRm</name>
+		<description>KtmRm for Distributed Transaction Coordinator coordinates transactions between the Distributed Transaction Coordinator (MSDTC) and the Kernel Transaction Manager (KTM). If it is not needed, it is recommended that this service remain stopped.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>lltdsvc</name>
+		<description>Link-Layer Topology Discovery Mapper creates a Network Map, consisting of PC and device topology (connectivity) information, and metadata describing each PC and device.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>LSM</name>
+		<description>Local Session Manager is a core Windows Service that manages local user sessions. Stopping or disabling this service will result in system instability.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>diagnosticshub.standardcollector.service</name>
+		<description>Diagnostics Hub Standard Collector Service. When running, this service collects real time ETW events and processes them.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wlidsvc</name>
+		<description>Microsoft Account Sign-in Assistant enables user sign-in through Microsoft account identity services. If this service is stopped, users will not be able to logon to the computer with their Microsoft account.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>MSiSCSI</name>
+		<description>Microsoft iSCSI Initiator Service manages Internet SCSI (iSCSI) sessions from this computer to remote iSCSI target devices.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>swprv</name>
+		<description>Microsoft Software Shadow Copy Provider manages software-based volume shadow copies taken by the Volume Shadow Copy service.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>smphost</name>
+		<description>Microsoft Storage Spaces SMP host service for the Microsoft Storage Spaces management provider.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SmsRouter</name>
+		<description>Microsoft Windows SMS Router Service routes messages based on rules to appropriate clients.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NetTcpPortSharing</name>
+		<description>Net.Tcp Port Sharing Service provides ability to share TCP ports over the net.tcp protocol.</description>
+		<notes></notes>
+		<default>Disabled</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>Netlogon</name>
+		<description>Netlogon maintains a secure channel between this computer and the domain controller for authenticating users and services.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NcdAutoSetup</name>
+		<description>Network Connected Devices Auto-Setup service monitors and installs qualified devices that connect to a qualified network. Stopping or disabling this service will prevent Windows from discovering and installing qualified network connected devices automatically. Users can still manually add network connected devices to a PC through the user interface.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NcbService</name>
+		<description>Network Connection Broker brokers connections that allow Windows Store Apps to receive notifications from the internet.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Netman</name>
+		<description>Network Connections manages objects in the Network and Dial-Up Connections folder, in which you can view both local area network and remote connections.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NcaSvc</name>
+		<description>Network Connectivity Assistant provides DirectAccess status notification for UI components.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>netprofm</name>
+		<description>Network List Service identifies the networks to which the computer has connected, collects and stores properties for these networks, and notifies applications when these properties change.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NlaSvc</name>
+		<description>Network Location Awareness collects and stores configuration information for the network and notifies programs when this information is modified.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>NetSetupSvc</name>
+		<description>Network Setup Service manages the installation of network drivers and permits the configuration of low-level network settings.  If this service is stopped, any driver installations that are in-progress may be cancelled.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>nsi</name>
+		<description>Network Store Interface Service delivers network notifications (e.g. interface addition/deleting etc) to user mode clients. Stopping this service will cause loss of network connectivity</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>CscService</name>
+		<description>Offline Files service performs maintenance activities on the Offline Files cache, responds to user logon and logoff events, implements the internals of the public API, and dispatches interesting events to those interested in Offline Files activities and changes in cache state.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>defragsvc</name>
+		<description>Optimize drives helps the computer run more efficiently by optimizing files on storage drives.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PNRPsvc</name>
+		<description>Peer Name Resolution Protocol enables serverless peer name resolution over the Internet using the Peer Name Resolution Protocol (PNRP). If disabled, some peer-to-peer and collaborative applications, such as Remote Assistance, may not function.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>p2psvc</name>
+		<description>Peer Networking Grouping enables multi-party communication using Peer-to-Peer Grouping.  If disabled, some applications, such as HomeGroup, may not function.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>p2pimsvc</name>
+		<description>Peer Networking Identity Manager provides identity services for the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services.  If disabled, the Peer Name Resolution Protocol (PNRP) and Peer-to-Peer Grouping services may not function, and some applications, such as HomeGroup and Remote Assistance, may not function correctly.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PerfHost</name>
+		<description>Performance Counter DLL Host enables remote users and 64-bit processes to query performance counters provided by 32-bit DLLs. If this service is stopped, only local users and 32-bit processes will be able to query performance counters provided by 32-bit DLLs.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>pla</name>
+		<description>Performance Logs and Alerts Collects performance data from local or remote computers based on preconfigured schedule parameters, then writes the data to a log or triggers an alert. If this service is stopped, performance information will not be collected.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PhoneSvc</name>
+		<description>Phone Service manages the telephony state on the device.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>PlugPlay</name>
+		<description>Plug and Play enables a computer to recognize and adapt to hardware changes with little or no user input. Stopping or disabling this service will result in system instability.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PNRPAutoReg</name>
+		<description>PNRP Machine Name Publication Service publishes a machine name using the Peer Name Resolution Protocol.  Configuration is managed via the netsh context 'p2p pnrp peer'.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WPDBusEnum</name>
+		<description>Portable Device Enumerator Service enforces group policy for removable mass-storage devices. Enables applications such as Windows Media Player and Image Import Wizard to transfer and synchronize content using removable mass-storage devices.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Power</name>
+		<description>Power manages power policy and power policy notification delivery.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>Spoolers</name>
+		<description>Print Spooler service spools print jobs and handles interaction with the printer.  If you turn off this service, you won’t be able to print or see your printers.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>PrintNotify</name>
+		<description>The Printer Extensions and Notifications service opens custom printer dialog boxes and handles notifications from a remote print server or a printer. </description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wercplsupport</name>
+		<description>Problem Reports and Solutions Control Panel Support service provides support for viewing, sending and deletion of system-level problem reports for the Problem Reports and Solutions control panel.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>PcaSvc</name>
+		<description>Program Compatibility Assistant Service provides support for the Program Compatibility Assistant (PCA).  PCA monitors programs installed and run by the user and detects known compatibility problems. If this service is stopped, PCA will not function properly.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>QWAVE</name>
+		<description>Quality Windows Audio Video Experience (qWave) is a networking platform for Audio Video (AV) streaming applications on IP home networks. qWave enhances AV streaming performance and reliability by ensuring network quality-of-service (QoS) for AV applications. It provides mechanisms for admission control, run time monitoring and enforcement, application feedback, and traffic prioritization.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>RasAuto</name>
+		<description>Remote Access Auto Connection Manager creates a connection to a remote network whenever a program references a remote DNS or NetBIOS name or address.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>RasMan</name>
+		<description>Remote Access Connection Manager manages dial-up and virtual private network (VPN) connections from this computer to the Internet or other remote networks.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SessionEnv</name>
+		<description>Remote Desktop Configuration service (RDCS) is responsible for all Remote Desktop Services and Remote Desktop related configuration and session maintenance activities that require SYSTEM context. These include per-session temporary folders, RD themes, and RD certificates.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>TermService</name>
+		<description>Remote Desktop Services allows users to connect interactively to a remote computer. Remote Desktop and Remote Desktop Session Host Server depend on this service.  To prevent remote use of this computer, clear the checkboxes on the Remote tab of the System properties control panel item.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>UmRdpService</name>
+		<description>Remote Desktop Services UserMode Port Redirector allows the redirection of Printers/Drives/Ports for RDP connections</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>RpcSs</name>
+		<description>The Remote Procedure Call (RPC) RPCSS service is the Service Control Manager for COM and DCOM servers. It performs object activations requests, object exporter resolutions and distributed garbage collection for COM and DCOM servers. If this service is stopped or disabled, programs using COM or DCOM will not function properly. It is strongly recommended that you have the RPCSS service running.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>RpcLocator</name>
+		<description>Remote Procedure Call (RPC) Locator. In Windows 2003 and earlier versions of Windows, the Remote Procedure Call (RPC) Locator service manages the RPC name service database. In Windows Vista and later versions of Windows, this service does not provide any functionality and is present for application compatibility.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>RemoteRegistry</name>
+		<description>Remote Registry enables remote users to modify registry settings on this computer. If this service is stopped, the registry can be modified only by users on this computer.</description>
+		<notes></notes>
+		<default>Disabled</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>RetailDemo</name>
+		<description>The Retail Demo Service controls device activity while the device is in retail demo mode.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>RemoteAccess</name>
+		<description>Routing and Remote Access offers routing services to businesses in local area and wide area network environments.</description>
+		<notes></notes>
+		<default>Disabled</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>RpcEptMapper</name>
+		<description>RPC Endpoint Mapper resolves RPC interfaces identifiers to transport endpoints.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>seclogon</name>
+		<description>Secondary Logon enables starting processes under alternate credentials. If this service is stopped, this type of logon access will be unavailable.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SstpSvc</name>
+		<description>Secure Socket Tunneling Protocol Service provides support for the Secure Socket Tunneling Protocol (SSTP) to connect to remote computers using VPN.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SamSs</name>
+		<description>Security Accounts Manager. The startup of this service signals other services that the Security Accounts Manager (SAM) is ready to accept requests.  Disabling this service will prevent other services in the system from being notified when the SAM is ready, which may in turn cause those services to fail to start correctly. This service should not be disabled.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>wscsvc</name>
+		<description>The WSCSVC (Windows Security Center) service monitors and reports security health settings on the computer.  The health settings include firewall (on/off), antivirus (on/off/out of date), antispyware (on/off/out of date), Windows Update (automatically/manually download and install updates), User Account Control (on/off), and Internet settings (recommended/not recommended). The service provides COM APIs for independent software vendors to register and record the state of their products to the Security Center service.  The Security and Maintenance UI uses the service to provide systray alerts and a graphical view of the security health states in the Security and Maintenance control panel.  Network Access Protection (NAP) uses the service to report the security health states of clients to the NAP Network Policy Server to make network quarantine decisions.  The service also has a public API that allows external consumers to programmatically retrieve the aggregated security health state of the system.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>SensorDataService</name>
+		<description>Sensor Data Service delivers data from a variety of sensors.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>SensrSvc</name>
+		<description>Sensor Monitoring Service monitors various sensors in order to expose data and adapt to system and user state.  If this service is stopped or disabled, the display brightness will not adapt to lighting conditions. Stopping this service may affect other system functionality and features as well.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>SensorService</name>
+		<description>Sensor Service is a service for sensors that manages different sensors' functionality. Manages Simple Device Orientation (SDO) and History for sensors. Loads the SDO sensor that reports device orientation changes.  If this service is stopped or disabled, the SDO sensor will not be loaded and so auto-rotation will not occur. History collection from Sensors will also be stopped.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>LanmanServer</name>
+		<description>Server supports file, print, and named-pipe sharing over the network for this computer.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>ShellHWDetection</name>
+		<description>Shell Hardware Detection provides notifications for AutoPlay hardware events.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>SCardSvr</name>
+		<description>Smart Card manages access to smart cards read by this computer. If this service is stopped, this computer will be unable to read smart cards</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>ScDeviceEnum</name>
+		<description>Smart Card Device Enumeration Service creates software device nodes for all smart card readers accessible to a given session. If this service is disabled, WinRT APIs will not be able to enumerate smart card readers.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SCPolicySvc</name>
+		<description>Smart Card Removal Policy allows the system to be configured to lock the user desktop upon smart card removal.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SNMPTRAP</name>
+		<description>SNMP Trap receives trap messages generated by local or remote Simple Network Management Protocol (SNMP) agents and forwards the messages to SNMP management programs running on this computer. If this service is stopped, SNMP-based programs on this computer will not receive SNMP trap messages.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>sppsvc</name>
+		<description>Software Protection enables the download, installation and enforcement of digital licenses for Windows and Windows applications. If the service is disabled, the operating system and licensed applications may run in a notification mode. It is strongly recommended that you not disable the Software Protection service.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>svsvc</name>
+		<description>Spot Verifier verifies potential file system corruptions.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>SSDPSRV</name>
+		<description>Discovers networked devices and services that use the SSDP discovery protocol, such as UPnP devices. Also announces SSDP devices and services running on the local computer. If this service is stopped, SSDP-based devices will not be discovered. If this service is disabled, any services that explicitly depend on it will fail to start.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>WiaRpc</name>
+		<description>Still Image Acquisition Events launches applications associated with still image acquisition events.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>StorSvc</name>
+		<description>Storage Service provides enabling services for storage settings and external storage expansion.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>TieringEngineService</name>
+		<description>Storage Tiers Management optimizes the placement of data in storage tiers on all tiered storage spaces in the system.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>SysMain</name>
+		<description>Superfetch maintains and improves system performance over time.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>SENS</name>
+		<description>System Event Notification Service monitors system events and notifies subscribers to COM+ Event System of these events.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>SystemEventsBroker</name>
+		<description>System Events Broker coordinates execution of background work for WinRT application. If this service is stopped or disabled, then background work might not be triggered.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>Schedule</name>
+		<description>Task Scheduler enables a user to configure and schedule automated tasks on this computer. The service also hosts multiple Windows system-critical tasks.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>lmhosts</name>
+		<description>TCP/IP NetBIOS Helper provides support for the NetBIOS over TCP/IP (NetBT) service and NetBIOS name resolution for clients on the network, therefore enabling users to share files, print, and log on to the network.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>TapiSrv</name>
+		<description>Telephony provides Telephony API (TAPI) support for programs that control telephony devices on the local computer and, through the LAN, on servers that are also running the service.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Themes</name>
+		<description>Themes provides user experience theme management.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>tiledatamodelsvc</name>
+		<description>Tile Data model server for tile updates.</description>
+		<notes>The tiledatamodelsvc service is involved in updating the content that is displayed on tiles in Start Menu.</notes>
+		<default>Auto</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>TimeBroker</name>
+		<description>Time Broker coordinates execution of background work for WinRT application.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>TabletInputService</name>
+		<description>Touch Keyboard and Handwriting Panel Service enables Touch Keyboard and Handwriting Panel pen and ink functionality.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>upnphost</name>
+		<description>UPnP Device Host allows UPnP devices to be hosted on this computer. If this service is stopped, any hosted UPnP devices will stop functioning and no additional hosted devices can be added.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>ProfSvc</name>
+		<description>User Profile Service is responsible for loading and unloading user profiles. If this service is stopped or disabled, users will no longer be able to successfully sign in or sign out, apps might have problems getting to users' data, and components registered to receive profile event notifications won't receive them.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>vds</name>
+		<description>Virtual Disk provides management services for disks, volumes, file systems, and storage arrays.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>VSS</name>
+		<description>Volume Shadow Copy manages and implements Volume Shadow Copies used for backup and other purposes. If this service is stopped, shadow copies will be unavailable for backup and the backup may fail.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>dmwappushservice</name>
+		<description>WAP Push Message Routing Service</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>WalletService</name>
+		<description>WalletService hosts objects used by clients of the wallet.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WebClient</name>
+		<description>WebClient enables Windows-based programs to create, access, and modify Internet-based files.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Audiosrv</name>
+		<description>Windows Audio manages audio for Windows-based programs.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>AudioEndpointBuilder</name>
+		<description>Windows Audio Endpoint Builder manages audio devices for the Windows Audio service.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>SDRSVC</name>
+		<description>Windows Backup provides Windows Backup and Restore capabilities.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WbioSrvc</name>
+		<description>The Windows Biometric Service gives client applications the ability to capture, compare, manipulate, and store biometric data without gaining direct access to any biometric hardware or samples. The service is hosted in a privileged SVCHOST process.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WcsPlugInService</name>
+		<description>Windows Color System service hosts third-party Windows Color System color device model and gamut map model plug-in modules. These plug-in modules are vendor-specific extensions to the Windows Color System baseline color device and gamut map models. Stopping or disabling the WcsPlugInService service will disable this extensibility feature, and the Windows Color System will use its baseline model processing rather than the vendor's desired processing. This might result in inaccurate color rendering.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wcncsvc</name>
+		<description>Windows Connect Now - Config Registra hosts the Windows Connect Now Configuration which is Microsoft's Implementation of Wireless Protected Setup (WPS) protocol. This is used to configure Wireless LAN settings for an Access Point (AP) or a Wireless Device. The service is started programmatically as needed.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>Wcmsvc</name>
+		<description>Windows Connection Manager makes automatic connect/disconnect decisions based on the network connectivity options currently available to the PC and enables management of network connectivity based on Group Policy settings.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WdNisSvc</name>
+		<description>Windows Defender Network Inspection Service helps guard against intrusion attempts targeting known and newly discovered vulnerabilities in network protocols.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WinDefend</name>
+		<description>Windows Defender Service helps protect users from malware and other potentially unwanted software.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wudfsvc</name>
+		<description>Windows Driver Foundation - User-mode Driver Framework creates and manages user-mode driver processes. This service cannot be stopped.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WEPHOSTSVC</name>
+		<description>Windows Encryption Provider Host Service brokers encryption related functionalities from 3rd Party Encryption Providers to processes that need to evaluate and apply EAS policies. Stopping this will compromise EAS compliancy checks that have been established by the connected Mail Accounts.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WerSvc</name>
+		<description>Windows Error Reporting Service allows errors to be reported when programs stop working or responding and allows existing solutions to be delivered. Also allows logs to be generated for diagnostic and repair services.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Wecsvc</name>
+		<description>Windows Event Collector this service manages persistent subscriptions to events from remote sources that support WS-Management protocol. This includes Windows Vista event logs, hardware and IPMI-enabled event sources. The service stores forwarded events in a local Event Log.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>EventLog</name>
+		<description>Windows Event Log service manages events and event logs. It supports logging events, querying events, subscribing to events, archiving event logs, and managing event metadata. It can display events in both XML and plain text format.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>MpsSvc</name>
+		<description>Windows Firewall helps protect your computer by preventing unauthorized users from gaining access to your computer through the Internet or a network.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>FontCache</name>
+		<description>Windows Font Cache Service optimizes performance of applications by caching commonly used font data. Applications will start this service if it is not already running. It can be disabled, though doing so will degrade application performance.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>stisvc</name>
+		<description>Windows Image Acquisition (WIA) provides image acquisition services for scanners and cameras.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>msiserver</name>
+		<description>Windows Installer adds, modifies, and removes applications provided as a Windows Installer (*.msi, *.msp) package.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>LicenseManager</name>
+		<description>Windows License Manager Service provides infrastructure support for the Windows Store.  This service is started on demand and if disabled then content acquired through the Windows Store will not function properly.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>Winmgmt</name>
+		<description>Windows Management Instrumentation provides a common interface and object model to access management information about operating system, devices, applications and services.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WMPNetworkSvc</name>
+		<description>Windows Media Player Network Sharing Service shares Windows Media Player libraries to other networked players and media devices using Universal Plug and Play.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>icssvc</name>
+		<description>Windows Mobile Hotspot Service provides the ability to share a cellular data connection with another device.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>TrustedInstaller</name>
+		<description>Windows Modules Installer enables installation, modification, and removal of Windows updates and optional components.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>FontCache3.0.0.0</name>
+		<description>Windows Presentation Foundation Font Cache 3.0.0.0 optimizes performance of Windows Presentation Foundation (WPF) applications by caching commonly used font data. WPF applications will start this service if it is not already running. It can be disabled, though doing so will degrade the performance of WPF applications.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WpnService</name>
+		<description>Windows Push Notifications Service is used for Windows Push Notifications.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WinRM</name>
+		<description>Windows Remote Management (WinRM) service implements the WS-Management protocol for remote management. WS-Management is a standard web services protocol used for remote software and hardware management. The WinRM service listens on the network for WS-Management requests and processes them. The WinRM Service needs to be configured with a listener using winrm.cmd command line tool or through Group Policy in order for it to listen over the network. The WinRM service provides access to WMI data and enables event collection. Event collection and subscription to events require that the service is running. WinRM messages use HTTP and HTTPS as transports. The WinRM service does not depend on IIS but is preconfigured to share a port with IIS on the same machine.  The WinRM service reserves the /wsman URL prefix. To prevent conflicts with IIS, administrators should ensure that any websites hosted on IIS do not use the /wsman URL prefix.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WSearch</name>
+		<description>Windows Search provides content indexing, property caching, and search results for files, e-mail, and other content.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WSService</name>
+		<description>Windows Store Service provides infrastructure support for Windows Store.This service is started on demand and if disabled applications bought using Windows Store will not behave correctly.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>W32Time</name>
+		<description>Windows Time maintains date and time synchronization on all clients and servers in the network.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wuauserv</name>
+		<description>Windows Update enables the detection, download, and installation of updates for Windows and other programs. If this service is disabled, users of this computer will not be able to use Windows Update or its automatic updating feature, and programs will not be able to use the Windows Update Agent (WUA) API.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WinHttpAutoProxySvc</name>
+		<description>WinHTTP Web Proxy Auto-Discovery Service implements the client HTTP stack and provides developers with a Win32 API and COM Automation component for sending HTTP requests and receiving responses. In addition, WinHTTP provides support for auto-discovering a proxy configuration via its implementation of the Web Proxy Auto-Discovery (WPAD) protocol.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>dot3svc</name>
+		<description>The Wired AutoConfig (DOT3SVC) service is responsible for performing IEEE 802.1X authentication on Ethernet interfaces. If your current wired network deployment enforces 802.1X authentication, the DOT3SVC service should be configured to run for establishing Layer 2 connectivity and/or providing access to network resources. Wired networks that do not enforce 802.1X authentication are unaffected by the DOT3SVC service.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>WlanSvc</name>
+		<description>WLAN AutoConfig service provides the logic required to configure, discover, connect to, and disconnect from a wireless local area network (WLAN) as defined by IEEE 802.11 standards. It also contains the logic to turn your computer into a software access point so that other devices or computers can connect to your computer wirelessly using a WLAN adapter that can support this. Stopping or disabling the WLANSVC service will make all WLAN adapters on your computer inaccessible from the Windows networking UI. It is strongly recommended that you have the WLANSVC service running if your computer has a WLAN adapter.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>wmiApSrv</name>
+		<description>WMI Performance Adapter provides performance library information from Windows Management Instrumentation (WMI) providers to clients on the network. This service only runs when Performance Data Helper is activated.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>workfolderssvc</name>
+		<description>Work Folders service syncs files with the Work Folders server, enabling you to use the files on any of the PCs and devices on which you've set up Work Folders.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>LanmanWorkstation</name>
+		<description>Workstation creates and maintains client network connections to remote servers using the SMB protocol.</description>
+		<notes></notes>
+		<default>Auto</default>
+		<expected>Auto</expected>
+	</service>
+	<service>
+		<name>WwanSvc</name>
+		<description>WWAN AutoConfig service manages mobile broadband (GSM and CDMA) data card/embedded module adapters and connections by auto-configuring the networks. It is strongly recommended that this service be kept running for best user experience of mobile broadband devices.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Manual</expected>
+	</service>
+	<service>
+		<name>XblAuthManager</name>
+		<description>Xbox Live Auth Manager provides authentication and authorization services for interacting with Xbox Live.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>XblGameSave</name>
+		<description>Xbox Live Game Save service syncs save data for Xbox Live save enabled games.  If this service is stopped, game save data will not upload to or download from Xbox Live.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+	<service>
+		<name>XboxNetApiSvc</name>
+		<description>Xbox Live Networking Service supports the Windows.Networking.XboxLive application programming interface.</description>
+		<notes></notes>
+		<default>Manual</default>
+		<expected>Disabled</expected>
+	</service>
+</configuration>
